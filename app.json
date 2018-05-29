@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/park_info_entry/park_info_entry"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#2698ef",
+    "navigationBarTitleText": "车牌号输入",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true,
+    "backgroundColor": "#2698ef"
+  }
+}

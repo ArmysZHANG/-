@@ -1,0 +1,64 @@
+<!--pages/tingche/tingche.wxml-->
+<view class='head'>
+  <view class='head1' wx:for="{{sercherStorage}}" wx:key="index"  data-id="{{index}}"  bindtap="tapSercherStorage" >
+    <text class='text1'>{{item}}</text>
+  </view>
+</view>
+
+<text class='car_num'>请输入车牌号</text>
+
+<view class="input_car_num">
+  <view class='input_car_num1'>
+    <view class="lg_rectangle{{textArrShow.length==1 ?'_hover':''}}">
+      <i wx:if="{{textArrShow.length>=1}}">{{textArrShow[0]}}</i>
+    </view>
+    <view class="lg_rectangle{{textArrShow.length==2?'_hover':''}}">
+      <i wx:if="{{textArrShow.length>=2}}">{{textArrShow[1]}}</i>
+    </view>
+  </view>
+  <view class="input_car_num2">
+    <view class="lg_rectangle{{textArrShow.length==3?'_hover':''}}">
+      <i wx:if="{{textArrShow.length>=3}}">{{textArrShow[2]}}</i>
+    </view>
+    <view class="lg_rectangle{{textArrShow.length==4?'_hover':''}}">
+      <i wx:if="{{textArrShow.length>=4}}">{{textArrShow[3]}}</i>
+    </view>
+    <view class="lg_rectangle{{textArrShow.length==5?'_hover':''}}">
+      <i wx:if="{{textArrShow.length>=5}}">{{textArrShow[4]}}</i>
+    </view>
+    <view class="lg_rectangle{{textArrShow.length==6?'_hover':''}}">
+      <i wx:if="{{textArrShow.length>=6}}">{{textArrShow[5]}}</i>
+    </view>
+    <view class="lg_rectangle{{textArrShow.length==7?'_hover':''}}">
+      <i wx:if="{{textArrShow.length>=7}}">{{textArrShow[6]}}</i>
+    </view>
+    <view class="lg_rectangle{{textArrShow.length==8?'_hover':''}}">
+      <i wx:if="{{textArrShow.length>=8}}">{{textArrShow[7]}}</i>
+    </view>
+  </view>
+</view>
+
+
+<view class="{{!specialBtn ?'select_num':'select_num_hide'}}">
+  <!--省份简写键盘-->
+  <view class='sm_rectangle' wx:for="{{keyboardValue}}" wx:key="*this" wx:for-index="idx" wx:for-item="itemName" bindtap="tapKeyboard" data-index="{{idx}}" data-val="{{itemName}}">
+    {{itemName}}
+  </view>
+</view>
+
+<view class="{{specialBtn ?'select_num':'select_num_hide'}}">
+  <!--字母键盘-->
+  <view wx:if="{{!tapNum}}" class='sm_rectangle' wx:for="{{keyboardAlph}}" wx:key="*this" wx:for-index="idx" wx:for-item="itemName" bindtap="tapKeyboard" data-index="{{idx}}" data-val="{{itemName}}">
+    {{itemName}}
+  </view>
+  <!--字母加数字键盘-->
+  <view wx:if="{{tapNum}}" class='sm_rectangle' wx:for="{{keyboardNumber}}" wx:key="*this" wx:for-index="idx" wx:for-item="itemName" bindtap="tapKeyboard" data-index="{{idx}}" data-val="{{itemName}}">
+    {{itemName}}
+  </view>
+  <!--删除键盘-->
+  <view class='sm_rectangle' bindtap='tapKeyboard' id="{{id80}}"  data-val='巛'>
+    <image src='/images/delete.png' mode='aspectFit' class='delete' data-val='巛'></image>
+  </view>
+</view>
+
+<button class='button' bindtap='paybill' disabled='{{keyboard2For}}'>查询缴费</button>

@@ -1,0 +1,129 @@
+/* pages/tingche/tingche.wxss */
+.head{
+  height: 87rpx;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+}
+.img-size{
+  width: 22rpx;
+  height: 22rpx;
+  margin-right: 12rpx;
+  margin-top: 40rpx;
+}
+.text1{
+  font-size: 26rpx;
+  }
+  .img{
+  height: 24rpx;
+  position: absolute;
+  margin-top: 22rpx;
+  margin-left: -350rpx;
+  }
+.head1{
+  margin-top: 20rpx;
+}
+.car_num{
+  font-size: 28rpx;
+  margin-left: 60rpx;
+  font-weight: bold;
+}
+.picker1{
+  margin-top: 36rpx;
+  font-size: 26rpx;
+}
+.lg_rectangle{
+  height: 95rpx;
+  width: 74rpx;
+  border: 1rpx solid #d9d9d9;
+  font-size: 30rpx;
+  text-align: center;
+  font-weight: bold;
+  line-height: 3.5em;
+  align-items: center;
+}
+.lg_rectangle_hover{
+  height: 95rpx;
+  width: 74rpx;
+  border: 2rpx solid #2698ef;
+  font-size: 30rpx;
+  text-align: center;
+  font-weight: bold;
+  line-height: 3.5em;
+}
+.input_car_num{
+  height: 88rpx;
+  width: 79%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+  justify-content: space-around;
+  margin-left: 80rpx;
+}
+.lg_rectangle_hide{
+  display: none;
+}
+.input_car_num1{
+  display: flex;
+  flex-direction: row;
+  margin-right: 26rpx;
+}
+.input_car_num2{
+  display: flex;
+  flex-direction: row;
+}
+.input_car_num2_hide{
+  display: none;
+}
+.select_num{
+  width: 79%;
+  height: 720rpx;
+  border: 1rpx solid #d9d9d9;
+  margin-left: 60rpx;
+  margin-top: 50rpx;
+  border-radius: 5rpx;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  justify-content: space-around;
+}
+.select_num_hide{
+  display: none;
+}
+.sm_rectangle{
+  font-size: 34rpx;
+  width: 64rpx;
+  height: 70rpx;
+  border: 1rpx solid #d9d9d9;
+  text-align: center;
+  line-height: 2.1em;
+  border-radius: 5rpx;
+  margin: 14rpx;
+}
+.button{
+  width: 630rpx;
+  height: 82rpx;
+  margin-top: 30rpx;
+  border: none;
+  background-color: #2698ef;
+  color: #fff;
+  font-size: 30rpx;
+  letter-spacing: 5rpx;
+  text-align: center;
+  line-height: 2.8em;
+}
+button[disabled][type="default"],wx-button[disabled]:not([type]) {
+background:#b4ceec;
+color: #fff;
+}
+.button-hover{
+  background-color: #b4ceec;
+}
+.delete{
+  width: 40rpx;
+  height: 30rpx;
+  margin-top: 20rpx;
+  margin-right: 5rpx;
+}
